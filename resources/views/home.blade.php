@@ -1,119 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.landing')
 
-        <title>Laravel</title>
+@section('title', 'Page Title')
 
-        <!-- Fonts -->
-        <link rel="stylesheet" href="/css/app.css">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/85bf57a8d9.js" crossorigin="anonymous"></script>
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <section id="welcome">
-      <div class="welcome-menu">
-        <div class="logo">
-          <img src="img/logo.png"/>
-        </div>
-          
-        <div class="menu">
-          <div class="menu-title">
-            Menu
-          </div>
-          <ul class="links">
-            <li>
-              <a href="#">Menu</a>
-            </li>
-            <li>
-              <a href="#">Wait list</a>
-            </li>
-            <li>
-              <a href="#">Offers</a>
-            </li>
-            <li>
-              <a href="#">Gift cards</a>
-            </li>
-          </ul>
-        </div>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="location">
-          <div class="address">
-            1200 Walkley Road <br>
-            Ottawa, ON K2K1G3
-          </div>
-          <div class="phone-number">
-            <a href="tel:4382340918">438-234-0918</a>
-          </div>     
-        </div>
-      </div>
-      <div class="welcome-jumbo">
-        <div class="status">New</div>
-        <h1>The Anderson Burger</h1>
-        <img src="img/hamburger-and-fries-png-4.png" class="burger-fries"/>
-      </div>
-    </section>
-
+@section('content')
     <section id="information">
       <div class="restaurant-image">
         <img src="img/top-down.jpg" />
@@ -305,5 +195,4 @@
       </div>
       
     </section>
-    </body>
-</html>
+@endsection
