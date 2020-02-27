@@ -1,4 +1,4 @@
-<div class="welcome-menu">
+<div class="side-menu">
     <a href="/" class="logo">
         <img src="img/logo.png"/>
     </a>
@@ -9,7 +9,10 @@
         </div>
         <ul class="links">
         <li>
-            <a href="/menu">Menu</a>
+            <a href="/menu">Food</a>
+        </li>
+        <li>
+            <a href="/about">About Us</a>
         </li>
         <li>
             <a href="/waitlist">Wait list</a>
