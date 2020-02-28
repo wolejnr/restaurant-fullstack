@@ -4,7 +4,7 @@
 
 
 @section('content')
-    <div class="welcome-jumbo">
+    <div class="">
         
         <h1>Contact Page</h1>
         
