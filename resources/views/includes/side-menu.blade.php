@@ -20,9 +20,6 @@
         <li>
             <a href="/offers">Offers</a>
         </li>
-        <li>
-            <a href="/giftcards">Gift cards</a>
-        </li>
         </ul>
     </div>
     <div class="social-icons">
