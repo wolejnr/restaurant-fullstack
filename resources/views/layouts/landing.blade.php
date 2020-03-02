@@ -22,7 +22,7 @@
       <div class="welcome-jumbo">
         <div class="status">New</div>
         <h1>The Anderson Burger</h1>
-        <img src="img/hamburger-and-fries-png-4.png" class="burger-fries"/>
+        <img src="/img/hamburger-and-fries-png-4.png" class="burger-fries"/>
       </div>
     </section>
 
