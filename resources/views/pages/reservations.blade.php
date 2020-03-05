@@ -12,6 +12,14 @@
                     
                     <form>
                         <div class="form-group">
+                            <label for="firstNameInput">First Name</label>
+                            <input type="text" class="form-control" name="fname" id="firstNameInput" placeholder="John">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastNameInput">Last Name</label>
+                            <input type="text" class="form-control" name="lname" id="lastNameInput" placeholder="Doe">
+                        </div>
+                        <div class="form-group">
                             <label for="emailInput">Email address</label>
                             <input type="email" class="form-control" name="email" id="emailInput" placeholder="name@example.com">
                         </div>
