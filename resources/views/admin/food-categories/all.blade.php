@@ -47,7 +47,7 @@
                                     <th scope="col">Delete</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            {{-- <tbody>
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>Burger</td>
@@ -60,6 +60,23 @@
                                         if(! confirm('Are you sure you want to delete category?')) { return false; }"><i class="far fa-trash-alt"></i></a>
                                     </td>
                                 </tr>
+                            </tbody>
+                             --}}
+                             <tbody>
+                                @foreach ($categories as $category)
+                                    <tr>
+                                        <th scope="row">{{$category->id}}</th>
+                                        <td>{{$category->title}}</td>
+                                        <td>{{date('m/d/Y', strtotime($category->updated_at))}}</td>
+                                        <td>
+                                            <a href="/admin/food-categories/{{$category->id}}/edit"><i class="far fa-edit"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="/admin/food-categories/{{$category->id}}/delete" onclick="
+                                            if(! confirm('Are you sure you want to delete category?')) { return false; }"><i class="far fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
