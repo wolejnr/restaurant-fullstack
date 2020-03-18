@@ -47,22 +47,8 @@
                                     <th scope="col">Delete</th>
                                 </tr>
                             </thead>
-                            {{-- <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Burger</td>
-                                    <td>2/2/2020</td>
-                                    <td>
-                                        <a href="/admin/food-categories/1/edit"><i class="far fa-edit"></i></a>
-                                    </td>
-                                    <td>
-                                        <a href="/admin/food-categories/1/delete" onclick="
-                                        if(! confirm('Are you sure you want to delete category?')) { return false; }"><i class="far fa-trash-alt"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                             --}}
-                             <tbody>
+    
+                            <tbody>
                                 @foreach ($categories as $category)
                                     <tr>
                                         <th scope="row">{{$category->id}}</th>
