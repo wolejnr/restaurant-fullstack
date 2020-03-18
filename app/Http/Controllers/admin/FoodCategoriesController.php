@@ -9,14 +9,6 @@ use App\FoodCategory;
 class FoodCategoriesController extends Controller
 {
 
-    // public function create() {
-    //     return view('admin/food-categories/create');
-    // }
-
-    // public function edit() {
-    //     return view('admin/food-categories/edit');
-    // }
-
     public function __construct()
     {
         $this->middleware('auth');
@@ -40,7 +32,7 @@ class FoodCategoriesController extends Controller
             'description' => ['required', 'string'],
             'image_url' => ['required', 'string'],
         ]);
-        
+
         $category = new FoodCategory();
         $category->title = request('title');
         $category->description = request('description');
