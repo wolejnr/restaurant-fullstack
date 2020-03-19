@@ -44,17 +44,26 @@
                                     <th scope="col">Full Name</th>
                                     <th scope="col">Email</th>
                                     <th scope="col">Phone Number</th>
-                                    <th scope="col">Date Created</th>
+                                    <th scope="col">Date</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Kate Henshaw</td>
-                                    <td>kateh@gmail.com</td>
-                                    <td>438-123-7890</td>
-                                    <td>3/3/2020</td>
-                                </tr>
+                                @foreach ($members as $member)
+                                    <tr>
+                                        <th scope="row">{{$member->id}}</th>
+                                        <td>{{$member->fname}} {{$member->lname}}</td>
+                                        <td>{{$member->email}}</td>
+                                        <td>{{$member->phone_number}}</td>
+                                        <td>{{date('m/d/Y', strtotime($member->updated_at))}}</td>
+                                        <td>
+                                            <a href="/admin/members/{{$member->id}}/edit"><i class="far fa-edit"></i></a>
+                                        </td>
+                                        <td>
+                                            <a href="/admin/members/{{$member->id}}/delete" onclick="
+                                            if(! confirm('Are you sure you want to delete member?')) { return false; }"><i class="far fa-trash-alt"></i></a>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
