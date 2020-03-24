@@ -37,7 +37,7 @@ class SettingController extends Controller
 
         $general_setting = GeneralSetting::find($id);
         $general_setting->site_title = request('site_title');
-        // $general_setting->logo_image_url = request('logo_image_url');
+        $general_setting->logo_image_url = request('logo_image_url');
         $general_setting->address_1 = request('address_1');
         $general_setting->address_2 = request('address_2');
         $general_setting->city = request('city');

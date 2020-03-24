@@ -54,6 +54,17 @@
                                                 </span>
                                             @enderror   
                                         </div>
+
+                                        <div class="form-group">
+                                            <label for="inputLogoURL">Logo Image URL</label>
+                                            <input id="inputLogoURL" type="text" class="form-control form-control-lg @error('logo_image_url') is-invalid @enderror" name="logo_image_url" value="{{ old('logo_image_url', $general_setting->logo_image_url) }}" required autocomplete="logo_image_url" placeholder="Insert Logo URL" autofocus>
+
+                                            @error('logo_image_url')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror   
+                                        </div>
                                         
                                         <div class="form-group">
                                             <label for="inputAddress1">Address 1</label>

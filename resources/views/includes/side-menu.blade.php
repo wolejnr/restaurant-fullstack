@@ -1,6 +1,6 @@
 <div class="side-menu">
     <a href="/" class="logo">
-        <img src="/img/logo.png"/>
+        <img src="{{$settings["general"]->logo_image_url}}"/>
     </a>
         
     <div class="menu">
@@ -26,17 +26,17 @@
         </ul>
     </div>
     <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="{{$settings["social"]->facebook_url}}" target="new"><i class="fab fa-facebook-f"></i></a>
+        <a href="{{$settings["social"]->twitter_url}}" target="new"><i class="fab fa-twitter"></i></a>
+        <a href="{{$settings["social"]->instagram_url}}" target="new"><i class="fab fa-instagram"></i></a>
     </div>
     <div class="location">
         <div class="address">
-        1200 Walkley Road <br>
-        Ottawa, ON K2K1G3
+        {{$settings["general"]->address_1}} {{$settings["general"]->address_2}} <br>
+        {{$settings["general"]->city}}, {{$settings["general"]->state}} {{$settings["general"]->zipcode}}
         </div>
         <div class="phone-number">
-        <a href="tel:4382340918">438-234-0918</a>
+        <a href="tel:{{$settings["general"]->phone_number}}">{{$settings["general"]->phone_number}}</a>
         </div>     
     </div>
 </div>
