@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title')
+Offers - {{$settings["general"]->site_title}}
+@endsection
+
+@section('description')
+{{$settings["general"]->site_title}} is committed to refining her menu to give our customers excellent service everytime. Sign up today to be the first to be notified of our new offerings.
+@endsection
 
 
 @section('content')

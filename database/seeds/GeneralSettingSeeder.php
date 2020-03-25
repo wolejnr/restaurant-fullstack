@@ -15,11 +15,11 @@ class GeneralSettingSeeder extends Seeder
         DB::table('general_settings')->insert([
             'site_title' => 'Anderson Burgers',
             'logo_image_url' => '/img/logo.png',
-            'address_1' => '1200 Walkley Road',
+            'address_1' => '2629 Alta Vista Dr',
             'address_2' => '',
             'city' => 'Ottawa',
             'state' => 'ON',
-            'zipcode' => 'K2K1G3',
+            'zipcode' => 'K1V 7T5',
             'phone_number' => '438-234-0918',
             'updated_at' => Carbon::now(),
             'created_at' => Carbon::now()

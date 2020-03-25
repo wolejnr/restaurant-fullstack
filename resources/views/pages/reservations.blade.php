@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title')
+Reservations - {{$settings["general"]->site_title}}
+@endsection
+
+@section('description')
+You want to make reservation ahead of your visit to {{$settings["general"]->site_title}} you can do so using our online reservation page.
+@endsection
 
 
 @section('content')

@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title')
+Thank You - {{$settings["general"]->site_title}}
+@endsection
+
+@section('description')
+We trust that you enjoyed our service today. Please do come again.
+@endsection
 
 
 @section('content')

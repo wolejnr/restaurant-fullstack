@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title')
+About - {{$settings["general"]->site_title}}
+@endsection
+
+@section('description')
+{{$settings["general"]->site_title}} has been known for top-notch English breakfast servings in the North Ontario region since 1987.
+@endsection
 
 
 @section('content')
