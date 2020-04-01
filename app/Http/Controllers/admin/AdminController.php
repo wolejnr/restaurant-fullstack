@@ -47,4 +47,19 @@ class AdminController extends Controller
             "total_employees" => $total_employees[0]->total
         ]);
     }
+
+    public function dailyRevenueLast30(){
+
+        // return $estimated_income_daily_data = DB::select(DB::raw('
+        //     SELECT DATE_FORMAT(created_at,"%Y-%m-%d") as reserved_day, (sum(guests_total)*27) as estimated_earnings, count(*) as total_reservations, sum(guests_total) as total_guests FROM restaurant.reservations group by reserved_day DESC
+        // '));
+
+        return $estimated_income_daily_data = DB::select(DB::raw('
+            SELECT DATE_FORMAT(created_at,"%Y-%m-%d") as x, 
+            (sum(guests_total)*27) as y
+            FROM restaurant.reservations 
+            group by x DESC
+        '));
+
+    }
 }
