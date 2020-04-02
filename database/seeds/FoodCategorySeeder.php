@@ -51,5 +51,13 @@ class FoodCategorySeeder extends Seeder
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);
+
+        DB::table('food_categories')->insert([
+            'title' => 'Drinks',
+            'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, temporibus! Aperiam aut labore fugit, voluptas eligendi dolorum et molestiae debitis assumenda asperiores ab delectus magnam optio dolorem quasi necessitatibus harum!',
+            'image_url' => 'img/mango-sunrise.png',
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now()
+        ]);
     }
 }
