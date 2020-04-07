@@ -281,6 +281,7 @@ body {
       .sliding-system {
           white-space: nowrap;
           transform: translate3d(-0%, 0, 0);
+          transition: all .3s ease-in-out;
       }
 
       .slide {
@@ -504,7 +505,7 @@ h2 {
 
     #food-preview {
         width: 100%;
-        overflow: hidden;
+        // overflow: hidden;
         padding: 20px;
 
         .button-rounded {
